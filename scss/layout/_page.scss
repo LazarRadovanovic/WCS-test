@@ -1,0 +1,288 @@
+h5,h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+h1 {
+    color: $color-white;
+    font-size: 64px;
+    font-weight: bold;
+    margin: 75px 0 30px 0;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: $color-blue;
+    margin: 0;
+    font-size: 26px;
+}
+
+h5 {
+    color: $color-black;
+    font-size: 20px;
+    margin:0 0 25px 0;
+}
+.btn {
+    display: inline-block;
+    padding: 18px 13px;
+    background: $color-red;
+    text-transform: uppercase;
+    transition: all .5s ease-in;
+    border: 1px solid $color-red;
+    
+    a {
+        color: $color-white;
+    }
+
+    &:hover {
+        background: $color-white;
+        
+        a {
+            color: $color-red;
+        }
+    }
+}
+
+.start-project {
+    display: inline-block;
+    border: 1px solid $color-red;
+    color: $color-white;
+    background: $color-red;
+    text-transform: uppercase;
+    padding: 17px 11px;
+}
+
+.divider {
+    border-top: 1px solid $color-white;
+    width: 57px;
+    margin: 0 auto;
+}
+
+//Slider styling
+.hide-swiper {
+    display: none;
+}
+.swiper {
+    text-align: center;
+    z-index: 1;
+
+    p {
+        color: $color-white;
+        font-size: 18px;
+        max-width: 707px;
+        margin: 30px auto 0 auto;
+        font-weight: 100;
+        line-height: 2;
+    }
+
+    .learn-more {
+        margin-top: 50px;
+        
+        a {
+            padding: 10px 27px;
+            margin: 50px auto 0 auto;
+            max-width: 130px;
+            border: 1px solid #b5b2a7;
+            background: rgba(0, 0, 0, .3);
+            color: $color-white;
+            text-transform: uppercase;
+            font-weight: 100;
+            transition: all 1s;
+            
+            &:hover {
+                background: rgba(0, 0, 0, .9);
+                text-decoration: none;
+            }
+        }
+    }
+
+    .slide1, .slide2 {
+        height: 470px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .slide1 {
+        background-image: url(../i/content/windmill.jpg);
+        
+    }
+    .slide2 {
+        background-image: url(../i/content/truck.jpg);
+    }
+
+    .swiper-container {
+        width: 100%;
+        max-height: 470px;
+    }
+    .swiper-button-next {
+        background-image: none;
+        right: 0;
+    }
+    .swiper-button-prev {
+        background-image: none;
+        left: 0;
+    }
+    .swiper-button-next,.swiper-button-prev {
+        z-index: 9999;
+        background: rgba(0, 0, 0, .5);
+        padding: 18px 13px;
+        top: 45%;
+    }
+
+    img {
+        width: 100%;
+        background-image: cover;
+    }
+}
+
+
+// Main-content
+
+.content {
+    padding: 0 30px 35px 30px;
+    background: $color-white;
+    text-align: center;
+    margin: -50px 0 0 0;
+    position: relative;
+    z-index: 999;
+    
+
+    ul {
+        text-align: center;
+        li {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            padding: 40px 0;
+            margin-right: 40px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            i {
+                position: absolute;
+                top:-16%;
+                left: 43%;
+                color: $color-red;
+                background: $color-bg;
+                height: 43px;
+                width: 43px;
+                border-radius: 50%;
+                z-index: 9999;
+                display: none;
+             }
+        }
+    }
+
+    .tablinks {
+        margin-right: 0;
+        cursor: pointer;
+    }
+    
+    .tabs {
+        .hir {
+            background: red;
+        }
+    }
+    
+    li {
+        margin:0;
+    }
+}
+
+.experience {
+    padding: 0 80px;
+    position: relative;
+    margin-bottom: 70px;
+
+    img {
+        position: absolute;
+        top: 81%;
+        left: 47%;
+    }
+
+    p {
+        font-family: "Tinos";
+        color: $color-black;
+        font-size: 27px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 55px;
+        margin: 38px 0 0 0;
+    }
+}
+
+.info {
+    padding: 0 0 20px 0;
+
+    p {
+        color: $color-primary;
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+
+    .find-out {         
+        border: 1px solid #d8d8d8;
+        color: $color-red;
+        padding: 10px 24px;
+        background: transparent;
+        display: inline-block;
+        margin: 0 auto;
+        cursor: pointer;
+        transition: all .5s ease-in;
+
+        &:hover {
+            background: $color-red;
+
+            a {
+                color: $color-white;
+            }                    
+        }
+        
+        a {
+            color: $color-red;                     
+        }
+    }
+}    
+
+.divider-gray {
+    border-top: 1px solid #dddddd;
+    margin-top: 10px; 
+    width: 100%;
+}
+
+.tablinks {
+    i {
+        display: none;
+    }
+}
+
+.active-tab {
+    @include fade();
+    background: $color-bg;
+    
+   .fa-angle-up {  
+       display: block;
+    }
+
+    h3 {
+       color: $color-black;
+       text-decoration: underline;
+   }
+}
+.tab-content {
+   display: none;
+
+   &.active-content {
+       @include fade();
+       display: block;
+    }
+}
+
+.cover-img {
+    background-image: url(../i/content/bottom-cover.jpg);
+    padding: 40px 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+

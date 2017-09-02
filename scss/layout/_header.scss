@@ -1,0 +1,33 @@
+header {
+    background: $color-white;
+    position: relative;
+    min-height: 63px;
+
+    .logo, ul.social-links {
+        position: absolute;
+        top: 20px;
+        display: inline;
+    }
+
+    .logo {
+        left: 20px;
+    }
+
+    .social-links {
+        text-align: center;
+        color: $color-white;
+        right: 20px;
+
+        a {
+            color: $color-white;
+        }
+        
+        li {
+            display: inline;
+            i {
+                background: #d3d3d3;
+                border-radius: 50%;
+            }
+        }
+    }
+}

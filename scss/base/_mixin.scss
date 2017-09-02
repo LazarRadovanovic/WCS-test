@@ -1,0 +1,19 @@
+@mixin fade() {
+    -webkit-animation: fadeEffect 1s;
+    -moz-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+    z-index: 9;
+    
+    @-webkit-keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    @-moz-keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+}

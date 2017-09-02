@@ -1,0 +1,108 @@
+@import 'reset';
+@import 'font-family';
+@import 'color';
+@import 'mixin';
+
+body {
+  font: $font-size $font-stack;
+  color: $color-primary;
+  background: $color-bg;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+strong {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+.margin-40 {
+    margin-top: 40px;
+}
+
+// Grid-layout
+.row {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.col {
+	float:left;
+	margin: 0 0 0 1%;
+
+  &:first-child { 
+    margin-left: 0; 
+  }
+}
+
+.row {
+  zoom:1; /* For IE 6/7 */
+
+  &:before, &:after {
+    content:""; display:table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+/*  GRID OF TWELVE  */
+.twelve {
+	  width: 100%;
+}
+
+.eleven {
+  	width: 91.58%;
+}
+.ten {
+  	width: 83.16%;
+}
+
+.nine {
+  	width: 74.75%;
+}
+
+.eight {
+  	width: 66.33%;
+}
+
+.seven {
+  	width: 57.91%;
+}
+
+.six {
+  	width: 49.5%;
+}
+
+.five {
+  	width: 41.08%;
+}
+
+.four {
+  	width: 32.66%;
+}
+
+.three {
+  	width: 24.25%;
+}
+
+.two {
+  	width: 15.83%;
+}
+
+.one {
+  	width: 7.416%;
+}
